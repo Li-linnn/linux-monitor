@@ -1,0 +1,9 @@
+syntax = "proto3";
+package monitor.proto;//package：定义命名空间：monitor::proto:: ...
+
+//message：定义类
+message CpuLoad {
+    float load_avg_1 = 1;//过去一分钟cpu的平均负载
+    float load_avg_3 = 2;//五分钟
+    float load_avg_15 = 3;//十五分钟
+  }
